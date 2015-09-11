@@ -1,0 +1,13 @@
+<%= form_for @inquiry,url:inquiry_thanks_path do |f| %>
+
+<%= f.hidden_field :name %>
+<p><%= @inquiry.name %></p>
+
+<%= f.hidden_field :email %>
+<p><%= @inquiry.email %></p>
+
+<p><%= @inquiry.message %></p>
+<h2>この内容でいいですか？</h2>
+<%= f.submit "確認"%>
+<%= f.submit "戻る" %>
+<% end %>

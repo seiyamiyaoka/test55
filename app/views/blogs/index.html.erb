@@ -1,0 +1,7 @@
+<h1>ブログ</h1>
+<p><% @blogs.each do |blog| %></p>
+<p><%= blog.name %></p>
+<p><%= blog.content %></p>
+<% end %>
+<%= link_to "新規投稿", blogs_new_path %>
+<%= link_to "問い合わせ",inquiry_path %>

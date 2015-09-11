@@ -1,0 +1,22 @@
+<h1>問い合わせ</h1>
+<%= form_for @inquiry ,url:inquiry_confirm_path do |f| %>
+
+<% if @inquiry.errors.any? %>
+<p><%= pluralize(@inquiry.errors.count,"error") %></p>
+<%  @inquiry.errors.full_messages.each do |message| %>
+<p><%= message %></p>
+<% end %>
+<% end %>
+
+
+<p>名前</p>
+<%= f.text_field :name %>
+<p>メールアドレス</p>
+<%= f.text_field :email %>
+<p>内容</p>
+<%= f.text_area :message %>
+<%= f.submit "確認" %>
+
+<% end %>
+<%= link_to "ホーム", blogs_path %>
+

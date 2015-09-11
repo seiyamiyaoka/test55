@@ -1,0 +1,9 @@
+<h1>新規投稿</h1>
+<%= form_for @blog do |f| %>
+<p>名前</p>
+<%= f.text_field :name %>
+<p>内容</p>
+<%= f.text_area :content %>
+<%= f.submit "送信" %>
+<% end %>
+<%= link_to "ホーム", blogs_path %>
