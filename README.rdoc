@@ -23,8 +23,13 @@ Things you may want to cover:
 
 * ...
 
-“ñŸŒ³‚Ì—«‘S”Ê
+â€œÃ±Å½Å¸Å’Â³â€šÃŒÂâ€”ÂÂ«â€˜Sâ€ÃŠ
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+sasaki nozomi
+
 miyaoka
+
